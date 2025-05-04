@@ -1,6 +1,44 @@
 
-# 命令
+# 运行步骤
+## 下载所需工程
+```commandline
+git clone git@github.com:qintianhaohao/EduData.git
+git clone git@github.com:qintianhaohao/EduKTM.git
+```
 
+## 启动conda环境
+```commandline
+conda activate myd
+```
+
+## 运行可用代码
+### AKT 
+论文：<https://arxiv.org/pdf/2007.12324>  
+数据集：2009_skill_builder_data_corrected
+
+```commandline
+python D:\code\myd_homework\EduKTM\examples\AKT\prepare_dataset.py
+python D:\code\myd_homework\EduKTM\examples\AKT\AKT.py
+```
+
+### LPKT
+论文：<https://dl.acm.org/doi/abs/10.1145/3447548.3467237>  
+数据集：anonymized_full_release_competition_dataset
+
+```commandline
+python D:\code\myd_homework\EduKTM\examples\LPKT\prepare_dataset.py
+python D:\code\myd_homework\EduKTM\examples\LPKT\LPKT.py
+```
+
+### DEKT
+论文：<https://arxiv.org/abs/2405.16799>  
+数据集：anonymized_full_release_competition_dataset
+
+```commandline
+python D:\code\myd_homework\EduData\examples\ASSISTments\DEKT-project\DEKT-main\DEKT\main.py
+```
+
+# 其他可用命令
 
 ## 启动jupyterlab
 ```bash
@@ -16,29 +54,6 @@ jupyter nbconvert --to script your_notebook.ipynb
 2. 使用大模型进行代码标准化 
 ```
 prompt：把这个文件转换成标准python文件格式，添加main函数，把所有代码块都转换成函数，并对所有函数添加中文注释
-```
-
-## 启动conda环境
-```commandline
-conda activate myd
-```
-
-# 可用代码
-## AKT
-```commandline
-python D:\code\myd_homework\EduKTM\examples\AKT\prepare_dataset.py
-python D:\code\myd_homework\EduKTM\examples\AKT\AKT.py
-```
-
-## LPKT
-```commandline
-python D:\code\myd_homework\EduKTM\examples\LPKT\prepare_dataset.py
-python D:\code\myd_homework\EduKTM\examples\LPKT\LPKT.py
-```
-
-## DEKT
-```commandline
-python D:\code\myd_homework\EduData\examples\ASSISTments\DEKT-project\DEKT-main\DEKT\main.py
 ```
 
 
